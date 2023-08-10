@@ -1,20 +1,18 @@
 import React from "react";
-import { GhostName, EvidenceType, Ghost, ghosts } from "./ghosts-evidences";
+import {ghosts} from "./ghostsandevidences";
 
 const GhostComponent = () => {
   return (
-    <div className='bg-center text-center font-extralight'>
-      <table className="bg-amber-900 bg-opacity-40 top-1/2 left-1/2 shadow-xl">
-        <tbody >
+    <div className='bg-center font-extralight'>
+
+        <div className='h-56 grid grid-cols-3 gap-4 text-center'>
           {ghosts.map((ghost, index) => (
-            <tr key={index} className='border-b border-gray-700' >
-        
-              <td className='p-1 text-left'>{ghost.name}</td>
-              <td className='p-1 text-left'>{ghost.evidences.join(", ")}</td>
-            </tr>
+            <div key={index} className='' >
+              <p className='p-1 text-left'>{ghost.name}</p>
+              {/*<td className='p-1 text-left'>{ghost.evidences.join(", ")}</td>*/}
+            </div>
           ))}
-        </tbody>
-      </table>
+    </div>
     </div>
   );
 };

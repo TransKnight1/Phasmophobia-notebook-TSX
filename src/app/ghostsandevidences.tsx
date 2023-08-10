@@ -26,13 +26,13 @@ enum GhostName {
 }
 
 enum EvidenceType {
-  EMF5 = 'EMF5',
-  Orb = 'Ghost Orb',
-  SpiritBox = 'Spirit Box',
-  Freezing = 'Freezing',
-  Fingerprints = 'Finger Prints',
-  Writing = 'GhostWriting',
-  DOTS = 'D.O.T.S',
+    EMF5 = 'EMF5',
+    Orb = 'Ghost Orb',
+    SpiritBox = 'Spirit Box',
+    Freezing = 'Freezing',
+    Fingerprints = 'Finger Prints',
+    Writing = 'GhostWriting',
+    DOTS = 'D.O.T.S',
 }
 
 type Ghost = {
@@ -90,6 +90,10 @@ const ghosts: Ghost[] = [
     evidences: [EvidenceType.EMF5, EvidenceType.Freezing, EvidenceType.DOTS],
   },
   {
+    name: GhostName.Youkai,
+    evidences: [EvidenceType.EMF5, EvidenceType.Writing, EvidenceType.DOTS],
+  },
+  {
     name: GhostName.Hantu,
     evidences: [EvidenceType.EMF5, EvidenceType.Orb, EvidenceType.Freezing],
   },
@@ -130,21 +134,12 @@ const ghosts: Ghost[] = [
     evidences: [EvidenceType.EMF5, EvidenceType.Orb, EvidenceType.Writing],
   },
   {
-    name: GhostName.Yurei,
-    evidences: [EvidenceType.Orb, EvidenceType.Freezing, EvidenceType.DOTS],
-  },
-  {
     name: GhostName.Thaye,
     evidences: [EvidenceType.Orb, EvidenceType.Writing, EvidenceType.Fingerprints],
-  },
-  {
-    name: GhostName.Youkai,
-    evidences: [EvidenceType.EMF5, EvidenceType.Writing, EvidenceType.DOTS],
   },
 ];
 
 export { GhostName, EvidenceType, ghosts};
-export type { Ghost };
 
 
 /*
