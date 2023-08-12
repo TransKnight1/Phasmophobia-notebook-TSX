@@ -4,17 +4,20 @@ import GhostCheckBoxes from "./ghost-checkboxes";
 
 function Home() {
   return (
-    <div className="bg-gray-500 min-h-screenjustify-center items-center">
-
-      <div className="grid grid-cols-3 gap-4">
+    <main className="min-h-screenjustify-center items-center">
+      
+      <div className="h-4/5 w-4/5">
+      <div className="p-2">
         <GhostCheckBoxes />
       </div>
 
-      <div className="mt-2 grid grid-cols-3 gap-4">
+      <div className="p-2 grid grid-cols-3">
         <GhostComponent />
       </div>
+      </div>
 
-    </div>
+
+    </main>
   );
 }
 

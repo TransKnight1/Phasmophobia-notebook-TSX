@@ -3,16 +3,12 @@ import {ghosts} from "./ghostsandevidences";
 
 const GhostComponent = () => {
   return (
-    <div className='bg-center font-extralight'>
-
-        <div className='h-56 grid grid-cols-3 gap-4 text-center'>
+        <div className='bg-clip-padding bg-amber-700 grid grid-cols-3 gap-4 font-extralight'>
           {ghosts.map((ghost, index) => (
             <div key={index} className='' >
-              <p className='p-1 text-left'>{ghost.name}</p>
-              {/*<td className='p-1 text-left'>{ghost.evidences.join(", ")}</td>*/}
+              <p className='text-center'>{ghost.name}</p>
             </div>
           ))}
-    </div>
     </div>
   );
 };

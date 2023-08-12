@@ -5,14 +5,16 @@ const GhostCheckBoxes = () => {
   const allEvidenceTypes = Object.values(EvidenceType);
 
   return (
-      <table>
+    <div className="w-1/3 h-1/3 bg-amber-700 text-center">
+      <div className='grid grid-cols-3 gap-4 font-extralight'>
         {allEvidenceTypes.map((evidence, index) => (
-          <tr key={index}>
+          <li className='list-none' key={index}>
             <input type="checkbox"></input>
             <label>{evidence}</label>
-          </tr>
+          </li>
         ))}
-      </table>
+      </div>
+    </div>
   );
 };
 
